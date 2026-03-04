@@ -97,7 +97,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyDjqSmBKT-AFlfa6QmvXx_h0RcUVT7xKms",
   authDomain: "todo-list-c87c6.firebaseapp.com",
   projectId: "todo-list-c87c6",
   storageBucket: "todo-list-c87c6.appspot.com",
