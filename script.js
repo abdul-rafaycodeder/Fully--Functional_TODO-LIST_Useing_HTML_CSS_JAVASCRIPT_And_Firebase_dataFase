@@ -82,6 +82,8 @@
 //     console.log("new quote", newQuote)
 // }
 
+
+
 //----------------------------------------Main code-------------------------------------//
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
