@@ -1,0 +1,123 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Container */
+.container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input Section */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#quoteInput {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#addBtn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #00f2fe;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* List Styling */
+#quoteList {
+  list-style: none;
+}
+
+#quoteList li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#quoteList li:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Buttons inside list */
+#quoteList button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+#quoteList button:first-of-type {
+  background: #ffc107;
+  color: #000;
+}
+
+#quoteList button:first-of-type:hover {
+  background: #ffb300;
+}
+
+#quoteList button:last-of-type {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+#quoteList button:last-of-type:hover {
+  background: #e60000;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
