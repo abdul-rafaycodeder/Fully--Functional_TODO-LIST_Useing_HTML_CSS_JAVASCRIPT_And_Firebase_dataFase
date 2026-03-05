@@ -109,23 +109,25 @@ loadQuotes();
 
 //------------------------User Authentication----------------------//
 
-const email = document.getElementById('signUpEmail');
-const password = document.getElementById('signUpPassword');
+
 const button = document.getElementById('signUpBtn');
 
 button.addEventListener('click', signUp);
 
 function signUp() {
+  const email = document.getElementById('signUpEmail').value
+  const password = document.getElementById('signUpPassword').value
+
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed up 
       const user = userCredential.user;
-      console.log(user)
+      showValue.innerHTML = user.email
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..
+      console.log(errorMessage)
     });
 }
