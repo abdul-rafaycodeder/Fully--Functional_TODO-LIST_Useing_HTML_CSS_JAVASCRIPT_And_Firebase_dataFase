@@ -10,8 +10,10 @@ import {
   deleteDoc,
   doc,
   serverTimestamp,
-  getAuth 
+  getAuth,
+  createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { use } from "react";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDjqSmBKT-AFlfa6QmvXx_h0RcUVT7xKms",
@@ -107,5 +109,23 @@ loadQuotes();
 
 //------------------------User Authentication----------------------//
 
+const email = document.getElementById('signUpEmail');
+const password = document.getElementById('signUpPassword');
+const button = document.getElementById('signUpBtn');
 
+button.addEventListener('click', signUp);
 
+function signUp() {
+  const auth = getAuth();
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed up 
+      const user = userCredential.user;
+      console.log(user)
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+}
