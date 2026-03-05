@@ -10,10 +10,15 @@ import {
   deleteDoc,
   doc,
   serverTimestamp,
-  getAuth,
-  createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { use } from "react";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDjqSmBKT-AFlfa6QmvXx_h0RcUVT7xKms",
@@ -110,24 +115,31 @@ loadQuotes();
 //------------------------User Authentication----------------------//
 
 
-const button = document.getElementById('signUpBtn');
+// const button = document.getElementById('signUpBtn');
 
-button.addEventListener('click', signUp);
+// button.addEventListener('click', signUp);
 
-function signUp() {
-  const email = document.getElementById('signUpEmail').value
-  const password = document.getElementById('signUpPassword').value
+// function signUp() {
+//   const email = document.getElementById('signUpEmail').value
+//   const password = document.getElementById('signUpPassword').value
 
-  const auth = getAuth();
-  createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed up 
-      const user = userCredential.user;
-      showValue.innerHTML = user.email
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorMessage)
-    });
-}
+//   const auth = getAuth();
+//   createUserWithEmailAndPassword(auth, email, password)
+//     .then((userCredential) => {
+//       // Signed up
+//       const user = userCredential.user;
+//       showValue.innerHTML = user.email
+//     })
+//     .catch((error) => {
+//       const errorCode = error.code;
+//       const errorMessage = error.message;
+//       console.log(errorMessage)
+//     });
+// }
+
+
+
+
+
+
+
