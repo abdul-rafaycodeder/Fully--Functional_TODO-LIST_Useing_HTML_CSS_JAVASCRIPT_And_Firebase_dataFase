@@ -9,7 +9,8 @@ import {
   updateDoc,
   deleteDoc,
   doc,
-  serverTimestamp
+  serverTimestamp,
+  getAuth 
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -23,6 +24,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
 const addBtn = document.getElementById("addBtn");
 const quoteInput = document.getElementById("quoteInput");
@@ -102,5 +104,8 @@ async function loadQuotes() {
 
 // Initial load
 loadQuotes();
+
+//------------------------User Authentication----------------------//
+
 
 

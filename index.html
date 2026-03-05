@@ -2,26 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Todo List</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Todo List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
-  <h2>My Quotes App</h2>
+  <!------------------------User Authentication---------------------->
+  
+  <input type="email" id="signUpEmail" placeholder="Enter email">
+  <input type="password" id="signUpPassword" placeholder="Enter password">
+  <button id="signUpBtn">Sign Up</button>
 
-  <div class="input-group">
-    <input type="text" placeholder="Enter your quote" id="quoteInput" />
-    <button id="addBtn">Add</button>
+
+   <!------------------------Todo List---------------------->
+  <div class="container">
+    <h2>My Quotes App</h2>
+
+    <div class="input-group">
+      <input type="text" placeholder="Enter your quote" id="quoteInput" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="quoteList"></ul>
   </div>
 
-  <ul id="quoteList"></ul>
-</div>
 
-    <script src="script.js" type="module"></script>
+
+
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
