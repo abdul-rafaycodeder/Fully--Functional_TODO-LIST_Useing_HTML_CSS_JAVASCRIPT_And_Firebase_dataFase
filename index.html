@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Todo List</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!------------------------User Authentication---------------------->
-
-  <input type="email" id="signUpEmail" placeholder="Enter email">
-  <input type="password" id="signUpPassword" placeholder="Enter password">
-  <button id="signUpBtn">Sign Up</button>
-  <h1 id="showValue"></h1>
-
-
-   <!------------------------Todo List---------------------->
-  <div class="container">
-    <h2>My Quotes App</h2>
-
-    <div class="input-group">
-      <input type="text" placeholder="Enter your quote" id="quoteInput" />
-      <button id="addBtn">Add</button>
+    <!-- Logout Button -->
+    <div class="top-bar">
+        <button id="logoutBtn">Logout</button>
+        <span id="showValue"></span>
     </div>
 
-    <ul id="quoteList"></ul>
-  </div>
+    <!-- Todo/Quotes App -->
+    <div class="container">
+        <h2>My Quotes App</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Enter your quote" id="quoteInput" />
+            <button id="addBtn">Add</button>
+        </div>
+        <ul id="quoteList"></ul>
+    </div>
 
-  <script src="script.js" type="module"></script>
+    <script type="module" src="script.js"></script>
 </body>
-
 </html>
