@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login / Signup</title>
-<link rel="stylesheet" href="firebase.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="firebase.css">
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<div class="form-container sign-up-container">
+        <div class="form-container sign-up-container">
 
-<form id="signupForm">
+            <form id="signupForm">
 
-<h1>Create Account</h1>
+                <h1>Create Account</h1>
 
-<input type="text" placeholder="Full Name" id="signupName" required>
+                <input type="text" placeholder="Full Name" id="signupName" required>
 
-<input type="email" placeholder="Email" id="signupEmail" required>
+                <input type="email" placeholder="Email" id="signupEmail" required>
 
-<input type="password" placeholder="Password" id="signupPassword" required>
+                <input type="password" placeholder="Password" id="signupPassword" required>
 
-<button type="submit">Sign Up</button>
+                <button type="submit">Sign Up</button>
 
-<p class="switch">Already have account? <span id="showLogin">Sign In</span></p>
+                <p class="switch">Already have account? <span id="showLogin">Sign In</span></p>
 
-</form>
+            </form>
 
-</div>
+        </div>
 
 
-<div class="form-container sign-in-container">
+        <div class="form-container sign-in-container">
 
-<form id="loginForm">
+            <form id="loginForm">
 
-<h1>Sign In</h1>
+                <h1>Sign In</h1>
 
-<input type="email" placeholder="Email" id="loginEmail" required>
+                <input type="email" placeholder="Email" id="loginEmail" required>
 
-<input type="password" placeholder="Password" id="loginPassword" required>
+                <input type="password" placeholder="Password" id="loginPassword" required>
 
-<button type="submit">Sign In</button>
+                <button type="submit">Sign In</button>
 
-<p class="switch">Don't have account? <span id="showSignup">Sign Up</span></p>
+                <p class="switch">Don't have account? <span id="showSignup">Sign Up</span></p>
 
-</form>
+            </form>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<script src="firebase.js"></script>
+    <script src="firebase.js" type="module"></script>
 
 </body>
+
 </html>
