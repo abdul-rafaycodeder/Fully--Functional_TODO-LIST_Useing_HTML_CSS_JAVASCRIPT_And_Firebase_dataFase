@@ -71,6 +71,7 @@ body {
 
 /* Buttons */
 .auth-container button {
+    
     width: 100%;
     padding: 12px;
     margin-top: 10px;
@@ -91,7 +92,9 @@ body {
 }
 
 /* Auth message */
-#authMessage {
+.authMessage {
+    /* text-align: center; */
+    margin: auto;
     margin-top: 15px;
     font-size: 14px;
     min-height: 20px;
@@ -106,22 +109,3 @@ body {
     }
 }
 
-/* Google Button */
-#googleBtn {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    background: #db4437; /* Google Red */
-    transition: 0.3s ease;
-}
-
-#googleBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}

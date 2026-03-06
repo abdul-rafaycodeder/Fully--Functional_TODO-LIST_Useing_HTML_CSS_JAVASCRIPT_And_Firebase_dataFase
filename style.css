@@ -10,7 +10,7 @@
 
 body {
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #667eea, #764ba2);
@@ -18,12 +18,14 @@ body {
 
 /* Main Container */
 .container {
+  margin: 120px auto;
+  /* height: 100vh; */
   width: 400px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
@@ -63,11 +65,12 @@ body {
 
 #addBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* List Styling */
 #quoteList {
+  /* text-align: center; */
   list-style: none;
 }
 
@@ -120,4 +123,9 @@ body {
   .container {
     width: 90%;
   }
+}
+
+#showValue{
+  /* text-align: center; */
+  margin: auto;
 }
